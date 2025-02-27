@@ -7,7 +7,11 @@ import ReactDOM from 'react-dom/client'
 // import Hello4 from './Hello.jsx'
 // import App3 from './App3.jsx'
 // import HeaderText from './App4.jsx'
-import Counter from './App5.jsx'
+// import Counter from './App5.jsx'
+// import App6 from './App6.jsx'
+// import Counter from './App7'
+// import App8 from './App8'
+import Counter from './App9'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -19,6 +23,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <Hello4 firstName="로버트" lastName="패틴슨"/> */}
     {/* <App3 /> */}
     {/* <HeaderText text="으아아아📢"/> */}
+    {/* <Counter /> */}
+    {/* <App6 /> */}
+    {/* <Counter /> */}
+    {/* <App8 /> */}
     <Counter />
   </React.StrictMode>,
 )
