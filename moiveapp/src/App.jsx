@@ -1,21 +1,20 @@
-import Home from './routes/Home';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Detail from './routes/Detail';
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./routes/Home";
+import Detail from "./routes/Detail";
 
 function App() {
-  
-  return (
+  return(
     <Router>
-      <Switch>
-        <Route path="/movie/:id">
-          <Detail />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
+      <Routes>
+        {/* 루트 경로 */}
+        <Route path="/" element={<Home />} />
+
+        {/* 영화 상제 정보 */}
+        <Route path="/movie/:id" element={<Detail />} />
+
+      </Routes>
     </Router>
   );
 }
+
 export default App;
